@@ -1,0 +1,53 @@
+/* Creates the css to make a grid within each box / div */
+.grid{
+    display: grid;
+    grid-template-rows: 1fr 2.5fr .2fr;
+    grid-template-columns: 1fr 1fr;
+    
+    width: 40rem;
+    margin: 1rem;
+    display: inline-grid;
+  
+    object-fit: contain;
+  
+    font-family: Helvetica, sans-serif;
+    background-color: white;
+    -webkit-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 
+            0 1px 5px 0 rgba(0,0,0,0.12), 
+            0 3px 1px -2px rgba(0,0,0,0.2);
+}
+/* Creates the css to make the h1 tags fully take up the grid and style */
+.grid h1{
+    background-color: #2d2d2d;
+    color: white;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-bottom: 1px dotted black;
+    margin: 0;
+    padding: 1rem 0;
+    height: 1em;
+}
+/* Centers the images within the box */
+.grid img{
+  text-align: center;
+  margin: 0 auto;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  height: 14em;
+}
+/* Styles the paragraph and makes it full width */
+.grid p{
+    line-height: 150%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin: 0rem 4rem;
+}
+.grid h4{
+    text-align: center;
+    padding-top: 1rem;
+    color: red;
+    border-top: 1px dotted black;
+}
